@@ -1,0 +1,23 @@
+D= {1:5.6, 2:7.8, 3:6.6, 4:8.7, 5:7.7}
+D[8]=8.8
+print("After additon of new element D is -->",D)
+del D[2]
+print("After del of element in D is -->",D)
+flag=0
+for i in D.keys():
+    if 6==i:
+        flag=1
+        break
+if flag==1:
+    print("yes")
+else:
+    print("No")
+print("num of elements in D is :",len(D))
+total=0
+for i in D.values():
+    total=total+i
+print("sumof values of D is :",total)
+D[3]=7.1
+print("After updating the value of elements :",D)
+D.clear()
+print("After clear D :",D)
