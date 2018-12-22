@@ -1,0 +1,52 @@
+L= [11, 12, 13, 14]
+print("Actual LIST -->", L)
+L.append(50)
+L.append(60)
+print("LIst after adding two num's",L)
+del L[0]
+del L[1]
+print("List after det two num's",L)
+L.sort()
+print("List after sorting in assending order",L)
+L.sort(reverse=True)
+print("List after sorting in dessending order",L)
+flag=0
+for i in range(0,len(L)):
+    if 13==L[i]:
+        flag=1
+        break
+if flag == 1:
+    print("Search element is : ""L","[",i,"]")
+else :
+    print("Search element is not present")
+print("total elements present in L:",len(L))
+#print ("Sum --> ", sum(L))
+print("max of List is :",max(L))
+print("min of List is :",min(L))
+total = 0
+for number in L:	
+	if( number%2 == 0 ):
+		total += number
+print("sum of even num is:",total)
+total = 0
+for number in L:	
+	if( number%2 != 0 ):
+		total += number
+print("sum of odd num is:",total)
+M=[]
+for i in L:
+    flag=0
+    for j in range(2,int(i/2)+1) :
+        if i%j==0:
+            flag=1
+            break
+    if flag==1:
+        print("NOt prime number",i)
+    else:
+        print("PRIME NUM",i)
+        M.append(i)
+print(M)
+total=0
+for i in M:
+    total=total+i
+print(total)
