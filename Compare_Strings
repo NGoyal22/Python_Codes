@@ -1,0 +1,9 @@
+a = input("Enter First String: ")
+b = input("Enter Second String: ")
+
+if a == b: 
+	print ("a == b")
+elif a >= b: 
+	print ("a > b")
+else:
+	print ("a < b")
