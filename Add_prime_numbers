@@ -1,0 +1,19 @@
+ #add all prime numbers
+n=int(input("Enter the number"))
+L=[]
+for i in range(1,n+1):
+    flag=0
+    for j in range(2,int(i/2)+1) :
+        if i%j==0:
+            flag=1
+            break
+    if flag==1:
+        print(i,": Not an Prime number")
+    else: 
+        print(i,": is an PRIME NUM")
+        L.append(i)
+print("List of Prime Numbers is : ",L)
+total=0
+for i in L:
+    total=total+i
+print("Sum of all Prime numbers is:",total)
