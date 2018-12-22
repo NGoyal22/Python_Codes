@@ -1,0 +1,19 @@
+# here we take range from 600 to 800
+L=[]
+print(L)
+for i in range(600,801):
+    flag=0
+    for j in range(2,int(i/2)+1):
+        if i%j==0:
+           flag=1
+           break
+    if flag==1:
+        print("Not a prime number",i)
+    else:
+        print("prime number is :",i)
+        L.append(i)
+print("list of all prime numbers in 600-800:",L)
+total=0
+for i in L:
+    total=total+i
+print("Total sum is:",total)
